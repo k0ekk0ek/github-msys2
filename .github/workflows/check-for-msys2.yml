@@ -15,5 +15,4 @@ jobs:
       - name: 'Check for msys2'
         shell: bash
         run: |
-          ls C:/msys64/mingw64
-          ls C:/msys64/mingw64/bin
+          find C:/msys64/mingw64
