@@ -21,3 +21,4 @@ jobs:
         # C:/msys64/mingw64 is empty (only some dirs)
         run: |
           which gcc
+          gcc --version
