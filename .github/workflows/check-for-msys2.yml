@@ -23,6 +23,4 @@ jobs:
         shell: bash
         # C:/msys64/mingw64 is empty (only some dirs)
         run: |
-          which gcc
-          gcc --version
-          which bash
+          ls C:/msys64/usr/bin
