@@ -14,5 +14,6 @@ jobs:
       - uses: actions/setup-python@v4
       - name: 'Check for msys2'
         shell: bash
+        # C:/msys64/mingw64 is empty (only some dirs)
         run: |
-          find C:/msys64/mingw64
+          find C:/msys64
