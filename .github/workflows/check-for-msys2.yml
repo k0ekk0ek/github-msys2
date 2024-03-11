@@ -9,13 +9,16 @@ jobs:
       matrix:
         include:
           - os: windows-2022
+            generator: 'MinGW Makefiles'
     steps:
       - uses: actions/checkout@v3
+      - uses: actions/setup-python@v4
       - uses: msys2/setup-msys2@v2
         with:
           update: false
           release: false
           install: make gcc
+        if: runner.os == 'Windows' && matrix.generator == 'MinGW Makefiles'
       - name: 'Check for msys2'
         shell: bash
         # C:/msys64/mingw64 is empty (only some dirs)
