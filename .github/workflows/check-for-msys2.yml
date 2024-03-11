@@ -11,9 +11,13 @@ jobs:
           - os: windows-2022
     steps:
       - uses: actions/checkout@v3
-      - uses: actions/setup-python@v4
+      - uses: msys2/setup-msys2@v2
+        with:
+          update: false
+          release: false
+          install: make gcc
       - name: 'Check for msys2'
         shell: bash
         # C:/msys64/mingw64 is empty (only some dirs)
         run: |
-          find C:/msys64
+          which gcc
