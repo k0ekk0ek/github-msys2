@@ -15,4 +15,5 @@ jobs:
       - name: 'Check for msys2'
         shell: bash
         run: |
-          ls C:/
+          ls C:/msys64
+          C:/msys64/mingw64/bin/gcc.exe --version
