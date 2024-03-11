@@ -16,3 +16,4 @@ jobs:
         shell: bash
         run: |
           ls C:/msys64/mingw64
+          ls C:/msys64/mingw64/bin
