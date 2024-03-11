@@ -25,3 +25,4 @@ jobs:
         run: |
           which gcc
           gcc --version
+          which bash
